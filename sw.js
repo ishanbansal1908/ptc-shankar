@@ -4,15 +4,15 @@
 //   khule aur bina internet ke bhi chale. Isme kuch badalna nahi.
 // ============================================================
 
-const CACHE = 'ptc-shankar-v2';
+const CACHE = 'ptc-shankar-v3';
 const SHELL = [
   './',
   './index.html',
   './config.js',
   './manifest.webmanifest',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/apple-touch-icon.png'
+  './icon-192.png',
+  './icon-512.png',
+  './apple-touch-icon.png'
 ];
 
 self.addEventListener('install', (e) => {

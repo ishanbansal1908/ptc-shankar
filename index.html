@@ -11,8 +11,8 @@
 <meta name="format-detection" content="telephone=no">
 <title>PTC Shankar</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script src="config.js"></script>
 <style>
   /* ============ PTC TOKENS ============ */
@@ -541,12 +541,12 @@
 <body>
 
 <!-- SPLASH -->
-<div id="splash"><img src="icons/icon-192.png" alt=""></div>
+<div id="splash"><img src="icon-192.png" alt=""></div>
 
 <!-- LOGIN -->
 <section id="login" class="hidden">
   <div class="login-inner">
-    <img class="login-logo" src="icons/icon-192.png" alt="">
+    <img class="login-logo" src="icon-192.png" alt="">
     <div class="login-title">PTC BROKERS</div>
     <div class="login-sub" data-i18n="subtitle">Bills · Earnings · Insights</div>
     <form class="login-card" id="loginForm" autocomplete="on">
@@ -1335,7 +1335,7 @@
   function renderInstallBanner() {
     var box = $('installBanner');
     if (isStandalone() || store.get('bannerOff', false) || !S.data) { box.innerHTML = ''; return; }
-    box.innerHTML = '<div class="banner"><img src="icons/icon-192.png" alt=""><button class="banner-text" id="bnOpen" style="text-align:left"><b>' +
+    box.innerHTML = '<div class="banner"><img src="icon-192.png" alt=""><button class="banner-text" id="bnOpen" style="text-align:left"><b>' +
       esc(t('bannerT')) + '</b>' + esc(t('bannerS')) + '</button><button class="x" id="bnX" aria-label="Close">' + ICON.close + '</button></div>';
     $('bnOpen').onclick = openInstallGuide;
     $('bnX').onclick = function () { store.set('bannerOff', true); box.innerHTML = ''; };
